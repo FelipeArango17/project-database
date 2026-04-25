@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login FutData</title>
+    <link rel="stylesheet" href="../css/loginStyle.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h2>FutData Login</h2>
+        <p class="subtitle">Acceso al sistema</p>
+
+        <div class="form-group">
+            <label>Servidor</label>
+            <input id="server" placeholder="Nombre del Servidor">
+        </div>
+
+        <div class="form-group">
+            <label>Base de datos</label>
+            <input id="database" placeholder="Base de Datos">
+        </div>
+
+        <div class="form-group">
+            <label>Usuario</label>
+            <input 
+                id="user" 
+                placeholder="Usuario"
+                autocomplete="off"
+                spellcheck="false"
+            >
+        </div>
+
+        <div class="form-group">
+            <label>Contraseña</label>
+            <input 
+                id="password" 
+                type="password" 
+                placeholder="••••••"
+                autocomplete="new-password"
+                spellcheck="false"
+            >
+        </div>
+
+        <button onclick="login()">Ingresar</button>
+
+        <p id="result" class="result"></p>
+    </div>
+</div>
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Permisos</title>
+    <link rel="stylesheet" href="../css/testStyle.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h2>Panel de Permisos</h2>
+        <p id="userInfo"></p>
+
+        <h3>Permisos del Usuario</h3>
+
+        <table class="perm-table">
+            <tr>
+                <th>Tabla</th>
+                <th>SELECT</th>
+                <th>INSERT</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>
+            </tr>
+
+            <tbody id="permBody"></tbody>
+        </table>
+
+        <h3>Ejecutar Consulta SQL</h3>
+
+        <textarea 
+            id="queryInput" 
+            placeholder="Ej: SELECT * FROM Deportistas"
+            spellcheck="false"
+            autocomplete="off"
+            autocorrect="off"
+            autocapitalize="off"
+        ></textarea>
+
+        <button onclick="runCustomQuery()">Ejecutar Consulta</button>
+
+        <div id="result" class="result"></div>
+
+        <table id="tableResult"></table>
+    </div>
+</div>
+
+<script src="../js/test.js"></script>
+
+</body>
+</html>
