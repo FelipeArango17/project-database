@@ -1,10 +1,3 @@
-/*
-    Este script contendra los comandos para crear los dos inicios de sesion
-    en el sistema FutData. A traves de comentarios en este mismo archivo, puedes 
-    redactar y especificar los nombres de cada inicio, sus claves y el proposito
-    de cada uno (sus roles)
-*/
-
 -- Debemos estar en la base de datos 'master' para crear accesos al servidor
 -- sys.server_principals : Libro de registro de seguridad
 
